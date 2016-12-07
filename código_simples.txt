@@ -1,0 +1,42 @@
+algoritmo "Equação 4x + 2 = 8 – 2x"
+// Função :
+// Autor :
+// Data : 06/12/2016
+// Seção de Declarações 
+var
+   a,n1,n2,b,ab,n1n2,resultado,x,v1,v2:real
+inicio
+
+escreval ("o primeiro membro da equação é representado por: 4x + 2 ")
+escreval ("o segundo membro da equação é representado por: 8 - 2x ")
+a:=4
+n1:= 2
+n2:=  8
+b:= 2
+ab:=(a+b)
+n1n2:=(n2-n1)
+resultado:= n1n2 /ab
+escreval("a equação ficara", a,"x","+",b,"x","=", n2,"-",n1)
+escreval("onde  o resultado da soma de X é: ", ab,"x")
+escreval("onde  o resultado da subtração dos numeros inteiros é: ", n1n2)
+escreval("ficando: ", resultado)
+escreval("ou seja o resultado de X vai ser: ", resultado)
+escreval("")
+escreval("==================== A verificação pode ser feita da seguinte forma =====================")
+escreval("4x + 2 = 8 – 2x" )
+escreval(" onde substituo o valor de X por 1, ficando: ")
+x:=1
+v1:= (4*x)+ 2)
+v2:= 8-(2*X)
+
+
+escreval(" o valor para 4x +2, onde substituo o X por valor 1, ficará igual á  ",v1)
+escreval(" o valor para 8 -2x, onde substituo o X por valor 1, ficará igual á  ",v2)
+escreval(" ficando assim:  ",v2 = v1,",ou seja, 1.")
+
+
+
+
+
+
+fimalgoritmo
