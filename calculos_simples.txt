@@ -1,0 +1,83 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 09/12/2016
+// Seção de Declarações 
+var
+a,b,c,soma,sub,mul,divi,diviinteira,exponenciacao,modulo,x,y:real
+
+inicio
+escreva("Digite um valor para A: ")
+leia(a)
+
+escreva("Digite um valor para B: ")
+leia(b)
+escreval("")
+
+//soma
+soma:=(a+b)
+escreval("a soma entre A e B é: ",soma)
+escreval("")
+
+//subtração
+sub:=(a-b)
+escreval("a subtração entre A e B é: ",sub)
+escreval("")
+
+//Multiplicação
+mul:=(a*b)
+escreval("a multiplicação entre A e B é: ",mul)
+escreval("")
+
+//Divisão
+divi:=(a/b)
+escreval("a divisão entre A e B é: ",divi)
+escreval("")
+
+//Divisão Inteira
+diviinteira:=(a\b)
+escreval("a divisão inteira entre A e B é: ",diviinteira)
+escreval("")
+
+//exponenciação
+exponenciacao:=(a^b)
+escreval("a sua exponenciação entre A e B é: ",exponenciacao)
+escreval("")
+
+//Módulo
+modulo:=(a%b)
+escreval("O modulo entre A e B é: ",modulo)
+escreval("")
+
+//valor absoluto
+escreval("Seu valor absoluto em caso de ",sub," é ",abs(sub))
+escreval("")
+
+//exponenciação
+escreval("A exponenciação do valor de ",a, " e ", b, " é ", exp(a,b))
+escreval("")
+
+//Parte Inteira
+escreval("A parte inteira de ",divi, " é ", int(divi))
+escreval("")
+
+//Raiz Quadrada
+escreval("A raiz quadrada ",mul, " é ", raizq(mul))
+escreval("")
+
+//Seno
+escreval("O Seno de  ",divi, " é ", sen(divi))
+escreval("")
+
+//Conseno
+escreval("O Coseno de  ",divi, " é ", cos(divi))
+escreval("")
+
+//Tangente
+escreval("O Tangente de  ",divi, " é ", tan(divi))
+escreval("")
+
+//Radiano
+escreval("E o grau Radiano de ",mul, " é ", grauprad(mul))
+escreval("")
+Escreval("=============================== Fim ===========================")
