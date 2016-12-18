@@ -1,0 +1,58 @@
+<meta charset="UTF-8">
+
+<h3> usando o return</h3>
+<script>
+
+function pulaLinha(){
+
+	document.write("<br>");
+}
+
+function mostra(texto){
+
+	document.write(texto);
+	pulaLinha();
+}
+
+function calculaImc(altura,peso) {
+
+	var imc=peso/(altura*altura);
+	return imc;
+}
+
+var imcBruno=calculaImc(1.75, 73);
+var imcAmigo=calculaImc(1.72, 68);
+
+mostra(imcBruno);
+mostra(imcAmigo);
+
+
+</script>
+
+
+<h3> De uma outra forma, já utilizando somente o return</h3>
+
+<script>
+function pulaLinha(){
+
+	document.write("<br>");
+}
+
+function mostra(texto){
+
+	document.write(texto);
+	pulaLinha();
+}
+
+function calculaImc(altura,peso){
+
+	return imc=peso/(altura*altura);
+}
+
+var 
+	imcBruno=calculaImc(1.75, 73);
+	imcAmigo=calculaImc(1.72, 68);
+	totalImc= (imcBruno + imcAmigo);
+
+document.write("A soma dos IMc's é "+totalImc);
+</script>

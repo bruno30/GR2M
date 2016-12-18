@@ -1,0 +1,38 @@
+algoritmo "semnome"
+// Função :
+// Autor :
+// Data : 17/12/2016
+// Seção de Declarações 
+var
+l1,l2,l3,result,result2:real
+equilatero,isoceles,escaleno:logico
+
+
+inicio
+escreval("=================== Verificar se o triângulo é equilátero, isósceles ou escaleno ====================")
+escreval(" a regra é um seguinte: ")
+escreval("o Triangulo Equilátero é quando TODOS os lados tem medidas  IGUAIS.")
+escreval("o Triangulo Isósceles é quando DOIS lados tem medidas IGUAIS.")
+escreval("o Triangulo Escaleno é quando todos os lados tem medidas DIFERENTES.")
+escreval("")
+Escreva("Digite o valor do 1º lado do triângulo: ")
+leia(l1)
+Escreva("Digite o valor do 2º lado do triângulo: ")
+leia(l2)
+Escreva("Digite o valor do 3º lado do triângulo: ")
+leia(l3)
+equilatero:=(l1=l2) e (l2=l3) e (l1=l3)
+Escreval("Este triangulo é equilatero ? ",equilatero)
+isoceles:=((l1=l2) ou (l2=l3))<> equilatero
+Escreval("Este triangulo é isósceles ? ",isoceles)
+escaleno:=(l1<>l2) e (l2<>l3) e (l1<>l3)
+Escreval("Este triangulo é escaleno ? ",escaleno)
+escreval("")
+escreval("=================== Vamos trabalhar com alguns cálculos ====================")
+escreval("qual vai ser a expressão quando trabalhos com lado1 + lado2 / lado3*lado1")
+escreval("subtraido pelo resultado do lado1 + lado2 ")
+result:=(l1+l2)/(l3*l1)
+result2:= (l3*l1) - (l1+l2)
+escreval("o resultado louco dessa conta é: ",result," e ",result2)
+
+fimalgoritmo

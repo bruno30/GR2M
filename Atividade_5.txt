@@ -1,0 +1,116 @@
+   
+var
+   ano_atual,ano_nascimento, idade,n,atual_ano,nas_ano,ide:inteiro
+   dolar,conversao,dinheiro,fahrenheit,celsius,preco,imposto,emprestimo,juros,valor,parcela,parcelados,massa,altura,imc,n1,n2,res:real
+
+
+Inicio
+
+   escreval("------ Ano de Nascimento ---------")
+      escreva("Digite o ano atual: ")
+         leia (ano_atual)
+      escreva("Digite o ano do seu nascimento: ")
+         leia (ano_nascimento)
+            idade:= ano_atual-ano_nascimento
+      escreval("A sua idade é: ",idade," anos")
+      
+   escreval("------ Conversor de moedas Dolar/real ---------")
+
+       escreva("o valor que tenho é de: ")
+         leia(dinheiro)
+         dolar:=2.22
+      escreval("O Dolar está: ",dolar)
+            conversao:=dinheiro/dolar
+       escreval("O valor que vou ter em  dolares é: ",conversao)
+
+
+   escreval("------ Calculo de temperatura ---------")
+      escreva("qual é a temperatura em fahrenheit: ")
+         leia(fahrenheit)
+         celsius:= (fahrenheit-32)/1.8
+      escreva("A temperatura em celsius é: ",celsius)
+
+
+   escreval("------ Valor de imposto ---------")
+       escreva("Digite o preço do ou dos produtos: ")
+         leia(preco)
+         imposto:=(preco*60)/100
+      escreva("o valor de imposto que vai ser pago é: ",imposto:5:2)//5 numeros no total, com 2 numeros depois do ponto
+
+
+   escreval("------ Empréstimo ---------")
+      escreva("quanto deseja pegar de empréstimo? ")
+         leia(emprestimo)
+            juros:=emprestimo*20/100
+            valor:= emprestimo+ juros
+      escreval("o valor do empréstimo mais os juros de 20% é de: ",valor)
+      escreva("em quantas parcelas deseja para este valor? ")
+         leia(parcela)
+            parcelados:=valor/parcela
+      escreva("este ",valor," parcelado em ",parcela," vezes"," vai ser igual á: ",parcelados)
+
+   escreval("----------------- Saber se o número é Par ou Impár -----------")
+      escreva("Digite um número: ")
+      leia(n)
+   se (n%2=0) entao
+      escreva("esse número é par!")
+   senao
+      escreva("esse número é impar!")
+   FimSe
+//os comandos devem ficar em evidência
+
+
+escreval("----------- Cálculo de massa corpórea IMC-----")
+escreva("Digite o valor da massa (kg): ")
+leia(massa)
+escreva("Digite a altura (m): ")
+leia(altura)
+imc:=massa/(altura^2)
+escreval("o valor de IMC é: ",imc:2:1)
+se (imc>=18.5) e (imc<25) entao
+     escreva("esta no peso ideal")
+senao
+     escreva("cuidado fora do peso")
+fimse
+
+
+escreval("----------- Carteira de motorista-----")
+escreva("digite o ano atual: ")
+leia(atual_ano)
+escreva("digite o ano do seu nascimento: ")
+leia(nas_ano)
+ide:=atual_ano -nas_ano
+escreval("sua idade é: ",ide)
+se (ide>=18) entao
+   escreva("já pode tirar a sua carteira de motorista")
+senao
+   escreva("espere completar 18 anos para tirar a sua carteira de motorista ")
+FimSe
+
+
+escreval("----------------- aprovado/reprovado -----------")
+escreva("digite a primeira nota: ")
+leia(n1)
+escreva("digite a segunda nota: ")
+leia(n2)
+res:=(n1+n2)/2
+escreval("a média é: ",res)
+se (res >=7) entao
+   escreva("aprovado")
+senao
+   escreva("reprovado")
+FimSe
+
+
+
+
+
+
+
+
+
+fimalgoritmo
+
+
+
+   
